@@ -1,0 +1,157 @@
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1025px)
+  #owl-cars
+    margin-top: 0
+    .item
+      height: 72vh
+      &__text
+        height: 200px
+        h2
+          font-size: em(30px)
+  .header
+    position: relative
+    &__top
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 200
+    &__main
+      margin-top: 52px
+      position: relative
+      .burger
+        display: block
+      .nav-main
+        display: none
+        background-color: white
+        position: absolute
+        top: 82px
+        left: 0
+        right: 0
+
+        ul
+          margin: 0
+          padding: 0
+          line-height: 50px
+          li
+            display: block
+            margin: 0
+            border-bottom: 1px solid $menu-bg
+            // padding-left: 15px
+
+            &:last-child
+              border: none
+            .nav-main__sub
+              // display: none !important
+              position: relative
+              top: 0
+              left: 0
+              margin: 0
+              a
+                line-height: 20px
+                padding: 15px 40px
+                border-bottom: 1px solid #fff
+                &:last-child
+                  border-bottom: none
+            .nav-main__cars
+              position: relative
+              &--item
+                display: block
+                width: 230px
+                height: 220px
+                background-size: contain
+                h2
+                  font-size: em(30px)
+                p
+                  font-size: em(20px)
+            a
+              text-align: left
+              padding-left: 30px
+              span
+                display: block
+                position: absolute
+                top: 0
+                right: 30px
+
+
+
+            &:hover .nav-main__sub
+              display: none
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+@media only screen and (max-width : 400px)
+  .header
+    &__top
+      overflow: hidden
+      height: 70px
+      text-align: center
+      line-height: 1
+      a
+        display: block
+        padding: 7px
+        margin: 6px 0 0 0
+    &__main
+      margin-top: 70px
+  #owl-cars
+    .item
+      height: 50vh
+      &__text
+        right: 0
+        h2
+          font-size: em(24px)
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1025px)
+
+  .header
+    &__main
+      .nav-main
+        display: block !important
+        .nav-main__sub
+          display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
