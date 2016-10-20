@@ -1,0 +1,151 @@
+.header
+  z-index: 300
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.55)
+
+  &__top
+    height: 52px
+    background-color: $dark-bg
+    text-align: right
+    line-height: 52px
+    letter-spacing: 0.077em
+    a
+      color: white
+      text-decoration: none
+      margin-left: 15px
+      text-transform: uppercase
+      font-size: em(14px)
+      font-weight: bold
+      &:first-child
+        color: $accent
+
+
+  &__main
+    position: relative
+    +clearfix
+    height: 82px
+    background-color: #fff
+    // border-bottom: 2px solid $accent
+    .logo-main
+      margin: 31px 25px 0 10px
+      float: left
+      display: block
+      width: 135px
+      height: 35px
+      background:
+        // color: $pink
+        image: url('/img/logo_cars2x.png')
+        size: contain
+        repeat: no-repeat
+      text-indent: 100%
+      white-space: nowrap
+      overflow: hidden
+    .burger
+      display: none
+      position: absolute
+      cursor: pointer
+      // background-color: pink
+      +size(80px)
+      line-height: 80px
+      font-size: 40px
+      right: 0px
+    .container
+
+    .nav-main
+      position: relative
+      float: left
+      // &__sub
+      //   display: none
+      //   position: absolute
+      //
+      //   width: 100%
+
+
+      ul
+        margin: 0
+        padding-left: 14px
+        line-height: 80px
+        li
+          // background-color: orange
+          display: inline-block
+          margin-left: 10px
+          position: relative
+          &:hover > a
+            color: $accent
+          &:first-child
+            margin-left: 0
+          &:hover .nav-main__sub
+            display: block
+          a
+            // background-color: $pink
+            display: block
+            text-decoration: none
+            color: $text-color
+            padding: 2px 10px 0
+            font-size: em(11px)
+            font-weight: bold
+            font-family: Arial,$helvetica
+            text-transform: uppercase
+            text-align: center
+            span
+              display: none
+
+            // border-left: 1px solid #fff
+            // border-right: 1px solid #fff
+          .nav-main__sub
+            display: none
+            min-width: 280px
+            background-color: $menu-bg
+            position: absolute
+            top: 100%
+            left: 50%
+            margin-left: -140px
+            a
+              font-size: em(13px)
+              text-transform: none
+              line-height: 15px
+              font-weight: normal
+              text-align: left
+              padding: 15px 41px
+
+              &:hover
+                color: $accent
+
+              &:first-child
+                padding-top: 30px
+              &:last-child
+                padding-bottom: 30px
+          .nav-main__cars
+            position: fixed
+            top: 134px
+            margin: 0
+            left: 0
+            right: 0
+            background-color: white
+            min-height: 400px
+            &--item
+              display: inline-block
+              margin: 0 0 0 50px !important
+              padding: 0 !important
+              background:
+                // color: orange
+                repeat: no-repeat
+                position: bottom
+              width: 350px
+              height: 300px
+              h2,p
+                font-family: "PFS", $helvetica
+                padding-left: 60px
+
+              h2
+                font-size: em(40px)
+              p
+                font-size: em(26px)
+
+            &--crv
+              background-image: url('/img/menu-crv.png')
+            &--pilot
+              background-image: url('/img/menu-pilot.png')
