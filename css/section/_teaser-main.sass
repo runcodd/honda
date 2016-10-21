@@ -1,0 +1,53 @@
+.section-teaser
+  min-height: 420px
+  .row
+    // margin-top: 150px
+  .teaser
+    margin-top: 130px
+    position: relative
+    background-color: $menu-bg
+    height: 230px
+
+    &:hover
+      background-color: #2F2C2C
+    &:hover .teaser__content h3,p
+      color: white
+    &:hover .teaser__content  p
+      color: white
+    &__content
+      display: block
+      background:
+        repeat: no-repeat
+        position: center top
+        size: contain
+      width: 240px
+      height: 330px
+      margin: 0 auto
+      position: relative
+      top: -100px
+      text-decoration: none
+
+      h3
+        margin: 0
+        text-align: center
+        padding-top: 190px
+        color: #333
+        text-transform: uppercase
+        font-family: "PFS", $helvetica
+      p
+        color: #777
+        text-align: center
+        font-size: 12px
+        margin: 0
+        padding: 0
+      &--yandex
+        background-image: url('../img/yandex_teaser.png')
+      &--quality
+        background-image: url('../img/teaser.png')
+      &--oil
+        background-image: url('../img/oil_2.png')
+    &--yandex
+
+    &--quality
+      background-color: #F3F3F3
+    &--oil

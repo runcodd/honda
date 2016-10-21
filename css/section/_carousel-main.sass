@@ -1,0 +1,51 @@
+#owl-cars
+  margin-top: 134px
+  .item
+    position: relative
+    height: calc(100vh - 134px)
+    background:
+      color: $menu-bg
+      repeat: no-repeat
+      size: cover
+      position: left center
+    &__text
+
+      position: absolute
+      // background-color: $pink
+      top: 50%
+      transform: translate(0, -50%)
+      width: 40vw
+      min-width: 300px
+      min-height: 200px
+      height: 300px
+      color: #fff
+      h2
+        font-size: em(48px)
+        margin: 0
+        padding-right: 20px
+        font-family: "PFS"
+      &--right
+        right: 100px
+      &--left
+        left: 100px
+
+
+    &__button
+      background-color: $accent
+      border: none
+      padding: 12px 20px
+      position: absolute
+      bottom: 0px
+      text-decoration: none
+      color: white
+      &:hover
+        background-color: #fff
+        color: $accent
+
+    &__crv
+      background:
+        image: url('../img/carousel-crv.png')
+
+    &__pilot
+      background:
+        image: url('../img/carousel-pilot.jpg')

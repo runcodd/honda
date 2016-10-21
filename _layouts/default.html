@@ -27,16 +27,27 @@
 
     </head>
     <body>
-    {% include header.html %}
+    <div class="page-wrap">
+      {% include header.html %}
 
 
-          {{ content }}
+            {{ content }}
 
+    </div>
+
+    {% include footer.html %}
+    <a href="#form" class="popup"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    <div class="hidden">
+      {% include form.html %}
+
+    </div>
 
 
 
      <!-- Custom JS -->
      <script src="{{site.baseurl}}js/jquery.min.js"></script>
+     <script src="{{site.baseurl}}js/owl.carousel.min.js"></script>
+     <script src="{{site.baseurl}}js/jquery.magnific-popup.min.js"></script>
      <script src="{{site.baseurl}}js/common.min.js"></script>
     </body>
 </html>

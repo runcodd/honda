@@ -4,6 +4,26 @@ $(function() {
   $(".burger").on("click",function () {
     $(".nav-main").slideToggle();
   });
+  $("#owl-cars").owlCarousel({
+     slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoPlay:true,
+      pagination: false
+   });
+   $(".popup").magnificPopup({
+
+  });
+  $('.popup-gmaps').magnificPopup({
+    disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+  });
+
 
 $(function() {
         // Call on every window resize
