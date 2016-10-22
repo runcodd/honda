@@ -1,0 +1,41 @@
+.carousel-crv
+  margin-top: 120px
+  width: 100%
+  background:
+    image: url('../img/crv/slider-bg-new.jpg')
+    repeat: no-repeat
+    size: cover
+    position: center
+  &__text
+    position: absolute
+    top: 150px
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, 0)
+    h1,p
+      font-family: "PFS"
+
+      color: white
+      text-align: center
+    h1
+      font-size: em(50px)
+      margin-bottom: 10px
+
+      span
+        color: $gold
+    p
+      font-size: em(25px)
+
+
+  &__item
+    min-height: calc(100vh - 157px)
+    position: relative
+
+
+
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -20%)

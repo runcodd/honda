@@ -87,10 +87,48 @@
 
             &:hover .nav-main__sub
               display: none
+  .carousel-crv
+    margin-top: 0px !important
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+
+
+
+  .carousel-crv
+    margin-top: 0px !important
+    &__item
+      min-height: 400px !important
+      img
+        width: 500px
+
+
+
+@media only screen and (max-width : 540px)
+  .carousel-crv
+
+    &__item
+      min-height: 250px
+      img
+        width: 300px
+  .carousel-crv__text
+    h1
+      font-size: em(34px) !important
+    p
+      font-size: em(25px) !important
+  section.crv-banner
+    height: 300px !important
+    .crv-banner__text
+      top: 50% !important
+      left: 50% !important
+      margin-right: -50% !important
+      transform: translate(-50%, -50%) !important
+      text-align: center !important
+      max-width: 80% !important
+    h2
+      font-size: em(30px) !important
 
 
 /* Extra Small Devices, Phones */

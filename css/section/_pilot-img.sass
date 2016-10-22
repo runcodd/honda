@@ -1,0 +1,89 @@
+section.pilot-video
+
+  background:
+    image: url('/img/pilot/pt-video-plug.jpg')
+    repeat: no-repeat
+    size: cover
+    position: center
+  // margin-top: 130px
+  height: 100vh
+  width: 100%
+  position: relative
+  overflow: hidden
+  video
+    position: absolute
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+
+section.pilot-banner
+  height: 100vh
+  width: 100%
+  position: relative
+  background:
+    repeat: no-repeat
+    size: cover
+    position: center
+  position: relative
+  overflow: hidden
+  .pilot-banner__text
+    position: absolute
+    &--right
+      right: 150px
+      top: 50%
+      transform: translate(0, -50%)
+      text-align: left
+      width: 400px
+    &--center
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
+      text-align: center
+      max-width: 80%
+    &--center--top
+
+      top: 20px
+      left: 50%
+      transform: translate(-50%, 0)
+      text-align: center
+  h2, p
+
+    font-family: "PFS", $helvetica
+  h2
+    margin-top: 0
+    color: white
+    padding-top: 20px
+    font-size: em(48px)
+  p
+    color: $gold
+    padding-top: 20px
+    font-size: em(20px)
+
+.pilot-banner__1
+  background:
+    image: url('../img/pilot/pt-slide-img-1.jpg')
+    attachment: fixed
+
+.pilot-banner__2
+  background:
+    image: url('../img/pilot/pt-slide-img-2.jpg')
+
+.pilot-banner__3
+  background:
+    image: url('../img/pilot/pt-slide-img-4_1.jpg')
+    attachment: fixed
+
+.pilot-banner__4
+  background:
+    image: url('../img/pilot/pt-slide-img-5.jpg')
+
+.pilot-banner__5
+  background:
+    image: url('../img/pilot/pt-slide-img-6.jpg')
+    attachment: fixed
+
+.pilot-banner__6
+  background:
+    image: url('../img/pilot/pt-slide-img-7.jpg')

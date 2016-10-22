@@ -1,5 +1,11 @@
 $(function() {
 
+  $(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+
+    
+
+  });
 
   $(".burger").on("click",function () {
     $(".nav-main").slideToggle();
@@ -11,6 +17,15 @@ $(function() {
       autoPlay:true,
       pagination: false
    });
+   $("#owl-crv").owlCarousel({
+      slideSpeed : 300,
+       paginationSpeed : 400,
+       singleItem:true,
+       autoPlay: true,
+       pagination: true,
+       transitionStyle:"fade",
+       mouseDrag: false
+    });
    $(".popup").magnificPopup({
 
   });
