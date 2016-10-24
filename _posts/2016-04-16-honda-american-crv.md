@@ -5,7 +5,7 @@ description: Компания Honda анонсировала пятое поко
 tags: CRV
 
 image: american-crv.jpg
-permalink: pretty
+
 ---
 ![ {{ page.image | remove: ".jpg" }} ]({{ site.baseurl }}img/blog/{{ page.image }})
 ## Компания Honda анонсировала пятое поколение модели CR-V, которая за 20 лет не раз становилась бестселлером на мировых рынках.
