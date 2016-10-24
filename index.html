@@ -16,10 +16,10 @@ categories:
       <div id="owl-blog" class="owl-carousel owl-theme">
         {% for post in site.posts %}
         <div class="item">
-        
+
             <div class="col-md-6 item__img" {% if post.image %}style="background-image: url('{{site.baseurl}}img/blog/{{post.image}}')"{% else %} style="background-image: url('{{site.baseurl}}img/blog/default.jpg')"{% endif%}> </div>
             <div class="col-md-6 item__text">
-              <a href="{{ post.url }}">
+              <a href="{{site.baseurl}}{{ post.url }}">
                 <h3>{{ post.title | truncate: 80 }}</h3>
                 <p> {{ post.description | truncate: 200 }}</p>
               </a>

@@ -4,7 +4,7 @@ title: МОДЕЛЬ HONDA CR-V БЫЛА ПРИЗНАНА ОДНИМ ИЗ ЛИД�
 description: 17 августа 2016 года модель Honda CR-V была признана одним из лидеров по индексу остаточной стоимости в России
 tags: CRV
 image: crv.jpg
-permalink: /blog/:year/:month/:day/:title/
+permalink: blog/:year/:month/:day/:title/
 
 ---
 ![ {{ page.image | remove: ".jpg" }} ]({{ site.baseurl }}img/blog/{{ page.image }})

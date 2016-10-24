@@ -4,6 +4,7 @@ description: honda dealership in City
 markdown: redcarpet
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-# baseurl: /
+baseurl: /
 # baseurl: ""
-baseurl: /honda/
+# baseurl: /honda/
+# baseurl: https://runcodd.github.io/honda2/
