@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+        <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
 
         {% if page.description %}
         <meta name="description" content="{{ page.description }}" />
@@ -19,8 +19,8 @@
         <meta property="og:locale" content="ru_RU">
         <meta property="og:type" content="article">
         <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="og:image" content="{{ site.url }}/img/{{ page.image }}" />
+        <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+        <meta property="og:image" content="{{ site.baseurl }}/img/{{ page.image }}" />
         <meta property="og:site_name" content="{{site.name}}">
         <!-- <meta property="article:publisher" content="http://www.facebook.com/id" />
         <meta property="article:author" content="https://www.facebook.com/id" /> -->
@@ -49,7 +49,7 @@
       	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
       	<!-- /*<style>@@include('header.min.css')</style>*/ -->
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{site.baseurl}}css/main.min.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/main.min.css">
 
 
 
@@ -81,10 +81,10 @@
 
      <!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
-		{"src" : "{{site.baseurl}}js/jquery.min.js", "async" : false},
-		{"src" : "{{site.baseurl}}js/owl.carousel.min.js", "async" : false},
-    {"src" : "{{site.baseurl}}js/jquery.magnific-popup.min.js", "async" : false},
-    {"src" : "{{site.baseurl}}js/common.min.js", "async" : false},
+		{"src" : "{{site.baseurl}}/js/jquery.min.js", "async" : false},
+		{"src" : "{{site.baseurl}}/js/owl.carousel.min.js", "async" : false},
+    {"src" : "{{site.baseurl}}/js/jquery.magnific-popup.min.js", "async" : false},
+    {"src" : "{{site.baseurl}}/js/common.min.js", "async" : false},
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
 	<!-- Optimized loading JS End -->
