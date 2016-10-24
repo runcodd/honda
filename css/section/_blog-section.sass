@@ -1,0 +1,47 @@
+.container-post
+  position: relative
+  img
+    width: 100%
+  p
+    margin: 10px 0
+
+.blog-section
+  margin-bottom: 50px
+  a
+    text-decoration: none
+    color: #333
+    &:hover h2
+      color: $accent
+  &__item
+    position: relative
+
+    width: 100%
+    min-height: 420px
+    margin: 15px 0
+    border-bottom: 1px solid grey
+    h2
+      font-size: em(20px)
+      margin: 10px 10px 20px 100px
+    p.item-p
+      position: absolute
+      top: 300px
+      margin: 0 10px
+    .item-date
+      position: absolute
+      top: 215px
+      width: 85px
+      height: 60px
+      background-color: $accent
+      color: white
+      text-align: center
+      p
+        letter-spacing: 1px
+      p:first-child
+        font-size: 25px
+    .item-img
+      width: 100%
+      height: 200px
+      background:
+
+        size: cover
+        position: center

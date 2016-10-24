@@ -1,0 +1,108 @@
+---
+layout: article
+title: Новые автомобили в наличии
+description:
+image:
+
+cars:
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: черный
+    img: new1
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: красный
+    img: red
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: серый
+    img: grey
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: белый
+    img: white
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: черный
+    img: new1
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: красный
+    img: red
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: серый
+    img: grey
+
+  - name: Honda CR-V 2.0 Sport
+    price: 1 954 900
+    year: 2016
+    engine: дизель
+    hp: 150
+    gear: Автоматическая
+    color: белый
+    img: white
+
+---
+<div class="nc-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <ul>
+          {% for item in page.cars %}
+            <li class="nc-section__item">
+              <img src="{{site.baseurl}}img/new/{{item.img}}.jpg" alt="{{item.img}}">
+              <div class="nc-section__item-info">
+                <ul>
+                  <h2>{{ item.name }}</h2>
+                  <li><strong>Цена: <span>{{ item.price }}  рублей</span></strong></li>
+                  <li>Год: {{ item.year }}</li>
+                  <li>Тип двигателя: {{item.engine}} </li>
+                  <li>Мощность двигателя: {{item.hp}}</li>
+                  <li>Тип коробки передач: {{item.gear}}</li>
+                  <li>Цвет: {{item.color}} </li>
+                  <a href="#">Заказать</a>
+                </ul>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>

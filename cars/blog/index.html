@@ -1,0 +1,30 @@
+---
+layout: article
+title: Блог
+description:
+image:
+
+---
+
+<div class="section blog-section">
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts %}
+      <div class="col-md-6">
+        <div class="blog-section__item">
+          <a href="{{ post.url }}">
+            <div class="item-img" {% if post.image %}style="background-image: url('{{site.baseurl}}img/blog/{{post.image}}')"{% else %} style="background-image: url('{{site.baseurl}}img/blog/default.jpg')"{% endif%}></div>
+            <h2>{{ post.title | truncate: 80 }}</h2>
+            <p class="item-p"> {{ post.description | truncate: 200 }}</p>
+            <div class="item-date">
+              <p>{{ post.date | date: "%d"  }}</p>
+              <p>{{ post.date | date: "%m/%Y"}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

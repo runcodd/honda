@@ -3,7 +3,7 @@ $(function() {
   $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
-    
+
 
   });
 
@@ -17,6 +17,14 @@ $(function() {
       autoPlay:true,
       pagination: false
    });
+   $("#owl-blog").owlCarousel({
+      slideSpeed : 300,
+       paginationSpeed : 400,
+       singleItem:true,
+       autoPlay: true,
+       mouseDrag: true,
+       pagination: false
+    });
    $("#owl-crv").owlCarousel({
       slideSpeed : 300,
        paginationSpeed : 400,

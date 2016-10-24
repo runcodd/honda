@@ -1,6 +1,33 @@
 ---
 layout: default
-title: Honda Kaliningrad
+title:
+description:
+image:
+date:
+categories:
 ---
 {% include carousel-main.html %}
 {% include teaser-main.html %}
+
+<section class="blog-main-section">
+  <div class="container">
+    <div class="row">
+      <h2>Блог</h2>
+      <div id="owl-blog" class="owl-carousel owl-theme">
+        {% for post in site.posts %}
+        <div class="item">
+        
+            <div class="col-md-6 item__img" {% if post.image %}style="background-image: url('{{site.baseurl}}img/blog/{{post.image}}')"{% else %} style="background-image: url('{{site.baseurl}}img/blog/default.jpg')"{% endif%}> </div>
+            <div class="col-md-6 item__text">
+              <a href="{{ post.url }}">
+                <h3>{{ post.title | truncate: 80 }}</h3>
+                <p> {{ post.description | truncate: 200 }}</p>
+              </a>
+            </div>
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

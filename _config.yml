@@ -1,4 +1,6 @@
 name: Honda
+title: Honda
+description: honda dealership in City
 markdown: redcarpet
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
