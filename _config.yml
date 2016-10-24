@@ -7,4 +7,4 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 # baseurl: ""
 # baseurl: ""
 baseurl: /honda
-# baseurl: https://runcodd.github.io/honda2/
+# baseurl: https://runcodd.github.io/honda2
